@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "fretboard-project"
+  "defaultProject": "fretboard-project",
+  "cli": {
+    "analytics": "4655d109-cfb4-4039-8526-b91d8aead560"
+  }
 }

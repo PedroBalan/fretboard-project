@@ -1,0 +1,58 @@
+.fretboard {
+  display: flex;
+  height: 240px;
+
+  background-color: #362904;
+
+  border: 1px solid black;
+}
+
+.fret {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+
+  border-right: 1px solid #a0a0a0;
+  border-left: 1px solid #a0a0a0;
+}
+
+.fret-string {
+  height: 2px;
+  width: 100%;
+
+  position: relative;
+
+  background-color: #808080;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+}
+
+.note {
+  background: white;
+  color: black;
+
+  height: 25px;
+  width: 25px;
+
+  position: absolute;
+  top: -10px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-root {
+  background: red;
+  color: white;
+}
+
+.hide {
+  display: none;
+}

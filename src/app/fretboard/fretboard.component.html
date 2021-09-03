@@ -1,0 +1,39 @@
+<div class="fretboard">
+  <div *ngFor="let fret of frets" class="fret">
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.E[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.E[fret%12])">
+        {{ notes.E[fret%12] }}
+      </div>
+    </div>
+
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.B[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.B[fret%12])">
+        {{ notes.B[fret%12] }}
+      </div>
+    </div>
+
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.G[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.G[fret%12])">
+        {{ notes.G[fret%12] }}
+      </div>
+    </div>
+
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.D[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.D[fret%12])">
+        {{ notes.D[fret%12] }}
+      </div>
+    </div>
+
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.A[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.A[fret%12])">
+        {{ notes.A[fret%12] }}
+      </div>
+    </div>
+
+    <div class="fret-string">
+      <div class="note" [class.is-root]="notes.E[fret%12] === scale[0]" [class.hide]="!scale.includes(notes.E[fret%12])">
+        {{ notes.E[fret%12] }}
+      </div>
+    </div>
+  </div>
+</div>
