@@ -73,12 +73,4 @@ export class NoteService {
 
     return scale;
   }
-
-  getMajorScale(): string[] {
-    return this.getScaleByMode('Ionian');
-  }
-
-  getMinorScale(): string[] {
-    return this.getScaleByMode('Aeolian');
-  }
 }

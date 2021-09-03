@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { NoteService } from '../services/note.service';
 
@@ -7,7 +7,7 @@ import { NoteService } from '../services/note.service';
   templateUrl: './fretboard.component.html',
   styleUrls: ['./fretboard.component.scss']
 })
-export class FretboardComponent implements OnInit {
+export class FretboardComponent {
   @Input() set selectedScale(mode: Mode) {
     this.mode = mode;
     this.scale = this.noteService.getScaleByMode(mode);
@@ -36,15 +36,4 @@ export class FretboardComponent implements OnInit {
   constructor(
     private noteService: NoteService,
   ) { }
-
-  ngOnInit(): void {
-    if (!this.scale.length) {
-      this.scale = this.noteService.getMajorScale();
-    }
-  }
-
-  printScale(): void {
-    console.log(this.scale);
-  }
-
 }
