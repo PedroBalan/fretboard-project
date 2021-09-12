@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 
+import { Mode } from '../models/modes.model';
+
 @Injectable({
   providedIn: 'root'
 })

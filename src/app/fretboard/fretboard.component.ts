@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+import { Mode } from '../models/modes.model';
 import { NoteService } from '../services/note.service';
 
 @Component({
